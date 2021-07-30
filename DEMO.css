@@ -1,0 +1,220 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0)),url(/back1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container
+{
+ 
+    z-index: 10;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px 0 0 90px;
+    
+}
+
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  rgba(255, 255, 255, 0.075);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: 0.4s;
+    transition-delay: 0.6s;
+}
+.container .card:hover
+{
+    transform: scale(1.05);
+}
+.container .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx
+{
+   transform: translateY(-40px);
+}
+.container .card .imgBx img
+{
+    max-width: 70%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx img
+{
+    transform: translate(100px,-80px) rotate(5deg) scale(0.5);
+    filter: blur(3px) saturate(10%);
+    
+}
+.container .card .imgBx h2
+{
+    color: #fff;
+    font-weight: 600;
+}
+.container .card .content
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .content
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-33px);
+}
+.container .card .content a
+{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+}
+.container .card  h3
+{
+    color: #fff;
+    font-weight: 600;   
+}
+.navbar
+{
+    position: absolute;
+    height: 11%;
+    display: block;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.nav
+{   
+    flex: 1;
+    text-align: right;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+nav ul li:hover
+{
+    transform: scale(1.2);
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.container .card .info
+{
+    position: absolute;
+    top: -250px;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: small;
+    color: rgb(17, 17, 17);
+    transform: translate3d(-80px, -30px, 0);   
+}
+.container .card .info h2
+{
+    color: rgb(56, 56, 56);
+}
+.navbar .logo
+{
+    position: absolute;
+    width: 120px;
+    right: 40px;
+    top: 20px;
+    transition: 0.4s;
+    filter: blur(1px) saturate(50%);
+    
+}
+.navbar .logo:hover
+{
+    transform: scale(1.2);
+    filter: blur(0px) saturate(100%);
+}
+.navbar h2
+{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.295);
+    top: 30px;
+    right: 220px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.navbar h2:hover
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 60px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+    letter-spacing: 2px;
+    transform: scale(1.2);
+}
+iframe
+{
+    padding: 20px;
+    transition: 0.5s;
+    border-radius: 30px;
+    filter: opacity(0.6);
+    padding-left: 50;
+}
+iframe:hover
+{
+    transform: scale(1.1);
+    filter: opacity(1);
+}
