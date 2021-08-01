@@ -1,0 +1,124 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*background: #1b1b1b;*/
+    overflow: hidden;
+    
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0)),url(/back1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container
+{
+
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  rgba(255, 255, 255, 0.075);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: 0.4s;
+    transition-delay: 0.1s;
+}
+.container .card:hover
+{
+    transform: scale(1.05);
+}
+.container .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 40px;
+    transition: 0.5s ease-in-out;
+    
+}
+.container .card:hover .imgBx
+{
+   transform: translateY(-10px);
+}
+.container .card .imgBx img
+{
+    max-width: 50%;
+    margin: -70px 0 10px;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.container .card .imgBx h2
+{
+    color: #fff;
+    font-weight: 600;
+}
+.container .card .content
+{
+    position: absolute;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 1;
+
+}
+.container .card:hover .content
+{
+     transform: translateY(-10px);
+}
+.container .card .content a
+{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: white;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.container .card  h3
+{
+    color: #fff;
+    font-weight: 600;   
+}
+.container .card .content a:hover
+{
+    background: rgb(0, 221, 66);
+}
+
+
+
