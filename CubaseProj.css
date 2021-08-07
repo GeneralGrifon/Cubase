@@ -19,6 +19,7 @@ section
     background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(243, 243, 243, 0.5)),url(/gray1.jpg);
     background-position: center;
     background-size: 900px;
+    min-height: 1080px;
 }
 section::before
 {
@@ -56,6 +57,7 @@ section::after
 }
 .container .card
 {
+    top: -100px;
     position: relative;
     width: 300px;
     height: 400px;
@@ -98,8 +100,8 @@ section::after
 }
 .container .card:hover .imgBx img
 {
-    transform: translate(100px,-80px) rotate(5deg) scale(0.5);
-    filter: blur(3px) saturate(10%);
+    transform: translate(30px,-8px) rotate(0deg) scale(1.1);
+    filter: blur(0px) saturate(105%);
     
 }
 .container .card .imgBx h2
@@ -286,9 +288,9 @@ lottie-interactive
 {
     z-index: 2;
     position: relative;
-    width: 72%;
-    left: 22px;
-    bottom: -6px;
+    width: 120%;
+    left: -50px;
+    border-radius: 8px;
 }
 .popup-card .info
 {
@@ -306,7 +308,7 @@ lottie-interactive
 
 .popup-card .info h2
 {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 20px;
     margin: 10px;
 }
@@ -319,13 +321,13 @@ lottie-interactive
 .popup-card .info p
 {
     font-size: 15px;
-    margin: 10px;
+    margin: 15px;
 }
 .popup-card .info .price
 {
     font-size: 45px;
     font-weight: 300;
-    margin: 10px;
+    margin: 0px;
 }
 .popup-card .info .PP
 {
@@ -333,9 +335,10 @@ lottie-interactive
     background: #009DD2;
     font-size: 16px;
     text-decoration: none;
-    margin: 10px auto;
-    padding: 10px 50px;
+    margin: 5px auto;
+    padding: 8px 50px;
     border-radius: 20px;
+    
 }
 .popup-card .info .QW
 {
@@ -343,8 +346,8 @@ lottie-interactive
     background: #009DD2;
     font-size: 16px;
     text-align: center;
-    margin: 10px auto;
-    padding: 10px 50px;
+    margin: 5px auto;
+    padding: 8px 50px;
     text-transform: uppercase;
     border-radius: 20px;
     text-decoration: none;
@@ -379,9 +382,9 @@ lottie-interactive
     } 
     .popup-card .product-img img
  {
-    left: -100px;
-    max-width: 30%; 
-    bottom: 3px;
+    left: -130px;
+    max-width: 40%; 
+    bottom: -3px;
  }
  .popup-card .info
  {
@@ -410,6 +413,7 @@ lottie-interactive
  {
     margin: 5px;
     font-size: 30px;
+
  }
  .popup-card .info .PP
  {
@@ -431,8 +435,8 @@ lottie-interactive
     background: #009DD2;
     font-size: 16px;
     text-decoration: none;
-    margin: 10px auto;
-    padding: 10px 50px;
+    margin: 5px auto;
+    padding: 8px 50px;
     border-radius: 20px;
  }
  .popup-card .info .QW
@@ -441,8 +445,8 @@ lottie-interactive
     background: #009DD2;
     font-size: 16px;
     text-align: center;
-    margin: 10px auto;
-    padding: 10px 50px;
+    margin: 5px auto;
+    padding: 8px 50px;
     text-transform: uppercase;
     border-radius: 20px;
     text-decoration: none;
