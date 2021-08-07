@@ -1,0 +1,222 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*background: #1b1b1b;*/
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(243, 243, 243, 0.5)),url(/gray1.jpg);
+    background-position: center;
+    background-size: 900px;
+    min-height: 1080px;
+}
+
+.container
+{
+
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.container .card
+{
+    top: -100px;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:  rgba(255, 255, 255, 0.075);
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    transition: 0.4s;
+    transition-delay: 0.6s;
+}
+
+.container .card .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .imgBx img
+{
+    max-width: 70%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+.container .card:hover .imgBx img
+{
+    transform: translate(0px,-8px) rotate(0deg) scale(1.1);
+
+    
+}
+.container .card .imgBx h2
+{
+    color: #fff;
+    font-weight: 600;
+}
+.container .card .content
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .content
+{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-33px);
+}
+.popup-btn
+{
+    z-index: 2;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container .card .content a
+{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #111;
+    text-transform: uppercase;
+}
+.container .card  h3
+{
+    color: #fff;
+    font-weight: 600;   
+}
+.navbar
+{
+    position: absolute;
+    height: 11%;
+    display: block;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+.nav
+{   
+    flex: 1;
+    text-align: right;
+}
+nav ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+nav ul li:hover
+{
+    transform: scale(1.2);
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.container .card .info
+{
+    position: absolute;
+    top: -250px;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: small;
+    color: rgb(17, 17, 17);
+    transform: translate3d(-80px, -30px, 0);   
+}
+.container .card .info h2
+{
+    color: rgb(56, 56, 56);
+}
+.navbar .logo
+{
+    position: absolute;
+    width: 120px;
+    right: 20px;
+    top: 35px;
+    transition: 0.4s;
+    filter: blur(1px) saturate(50%);
+    
+}
+.navbar .logo:hover
+{
+    transform: scale(1.2);
+    filter: blur(0px) saturate(100%);
+}
+.navbar h2
+{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.295);
+    top: 45px;
+    right: 220px;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+.navbar h2:hover
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 40px #fff,
+                 0 0 60px #fff,
+                 0 0 80px #fff,
+                 0 0 120px #fff,
+                 0 0 160px #fff;
+    letter-spacing: 1px;
+    transform: scale(1.1);
+}
+lottie-interactive
+{
+    top: 0;
+    
+}
+
+
+
+
+
