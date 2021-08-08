@@ -364,6 +364,10 @@ lottie-interactive
 }
 @media (max-width: 900px)
 {
+    .container .card
+    {
+        top: 0px;
+    }
     .popup-card
     {
         flex-direction: column;
