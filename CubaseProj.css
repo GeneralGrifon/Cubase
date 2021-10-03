@@ -17,6 +17,7 @@ section
     padding: 100px 20px;
     box-sizing: border-box;
     background-image: linear-gradient(rgba(0, 0, 0, 0.753),rgba(243, 243, 243, 0.5)),url(/gray1.jpg);
+    background-color: rgba(17, 17, 17, 0);
     background-position: center;
     background-size: 900px;
     min-height: 1080px;
@@ -54,14 +55,15 @@ section::after
     
     
     
+    
 }
 .container .card
 {
-    top: -100px;
+    top: -120px;
     position: relative;
     width: 300px;
     height: 400px;
-    margin: 20px 110px;
+    margin: 20px 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +74,7 @@ section::after
     border-radius: 10px;
     transition: 0.4s;
     transition-delay: 0.6s;
+    
 }
 .container .card:hover
 {
@@ -256,6 +259,8 @@ lottie-interactive
     align-items: center;
     opacity: 0;
     visibility: hidden;
+    
+    
 }
 .popup-view.active{
     opacity: 1;
@@ -269,6 +274,8 @@ lottie-interactive
     width: 800px;
     height: 500px;
     margin: 20px;
+    perspective: 2000px;
+    
 }
 .popup-card .product-img
 {
@@ -283,14 +290,30 @@ lottie-interactive
     transform: translateY(25px);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    transform-style: preserve-3d;
 }
-.popup-card .product-img img
+/* .popup-card .product-img .z
+{
+    transform-style: preserve-3d;
+    transform: translateZ(120px);
+} */
+
+.popup-card .product-img:hover iframe
+{
+    transform: rotateY(0deg) translateX(-10px) translateZ(100px);
+}
+.popup-card .product-img iframe
 {
     z-index: 2;
     position: relative;
-    width: 120%;
-    left: -50px;
-    border-radius: 8px;
+    width: 100%;
+    left: 11px;
+    /* border-radius: 8px; */
+    transform: rotateY(55deg) translateX(-110px) translateZ(100px);
+    transition: 1s;
+    transition-delay: 0.1s;
+    transform-style: preserve-3d;
+    
 }
 .popup-card .info
 {
@@ -299,7 +322,7 @@ lottie-interactive
     display: flex;
     flex-direction: column;
     width: 55%;
-    height: 121%;
+    height: 140%;
     box-sizing: border-box;
     padding: 40px;
     border-radius: 10px;
@@ -339,6 +362,7 @@ lottie-interactive
     padding: 8px 50px;
     border-radius: 20px;
     
+    
 }
 .popup-card .info .QW
 {
@@ -365,9 +389,11 @@ lottie-interactive
 @media (max-width: 900px)
 {
     .container .card
-    {
-        top: 0px;
-    }
+{
+    top: 10px;
+
+    
+}
     .popup-card
     {
         flex-direction: column;
