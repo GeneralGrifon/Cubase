@@ -54,6 +54,12 @@
                         <!-- <a href="https://www.youtube.com/watch?v=jpOxNnaENlM&t=24s">Заценить</a> -->
                     </p>
                         <span class="price">$45.00</span>
+                        <?
+include 'config.php';
+
+<a href="https://oplata.qiwi.com/create?publicKey='.QIWI('public_key').'&amount=100&successUrl='.QIWI('successUrl').'&account=1">Оплатить</a>
+
+?>
                         
                         <a href="#" class="QW">QIWI</a>
                     </div>
